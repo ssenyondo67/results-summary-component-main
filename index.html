@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/dist/output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+    <main role="main " class="md:h-screen md:flex items-center justify-center">
+      <div class="container w-full md:grid grid-cols-2 md:max-w-2xl  md:rounded-3xl">
+        <!-- -----------------result------------ -->
+        <div class="result-box flex flex-col items-center justify-center text-center rounded-bl-3xl rounded-br-3xl pb-8 md:rounded-3xl">
+          <h2 class="box--title text-2xl font-medium mt-6 text__lav">Your Result</h2>
+          <div class="result-circle flex flex-col items-center justify-center  w-32 h-32 rounded-full my-4">
+            <h1 class="result--score text-5xl font-extrabold">76</h1>
+            <h5 class="result--score text__lav">of 100</h5>
+          </div>
+          <h1 class="result-title text-2xl font-extrabold text__lav my-4"> Great</h1>
+          <p class="result--description w-2/3 text__lav text-lg">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+
+        <!-- ----------------------summary-------------- -->
+        <div class="summary-box flex flex-col items-start justify-between p-8">
+          <h2 class="box-title  text__blue text-2xl font-medium mb-4">Summary</h2>
+          <div class="summarys flex flex-col items-center justify-evenly w-full">
+            <div class="summary summary1 flex items-center  mb-4 w-full p-2  bg-red-100">
+              <img src="./assets/images/icon-reaction.svg" alt="" class="summary--icon mr-4">
+              <div class="summary--name  font-medium">Reaction</div>
+              <p class="score space-x-1 ml-auto text__lav"><span class="summary--score text__blue font-bold">80 </span>/<span class="summary--total">100</span></p>
+            </div>
+            <div class="summary summary2 flex items-center  mb-4 w-full p-2  bg-yellow-100 ">
+              <img src="./assets/images/icon-memory.svg" alt="" class="summary--icon mr-4">
+              <div class="summary--name font-medium">Memory</div>
+              <p class="score space-x-1 ml-auto text__lav"><span class="summary--score text__blue font-bold ">92 </span>/<span class="summary--total">100</span></p>
+            </div>
+            <div class="summary summary3 flex items-center  mb-4 w-full p-2  bg-green-100">
+              <img src="./assets/images/icon-verbal.svg" alt="" class="summary--icon mr-4">
+              <div class="summary--name font-medium">Verbal</div>
+              <p class="score space-x-1 ml-auto text__lav"><span class="summary--score text__blue font-bold">61 </span>/<span class="summary--total">100</span></p>
+            </div>
+            <div class="summary summary4 flex items-center  mb-4 w-full p-2  bg-blue-100 ">
+              <img src="./assets/images/icon-visual.svg" alt="" class="summary--icon mr-4">
+              <div class="summary--name font-medium">Visual</div>
+              <p class="score space-x-1 ml-auto text__lav"><span class="summary--score text__blue font-bold"> 72 </span>/<span class="summary--total">100</span></p>
+            </div>
+          </div>
+          <div class="btn continue-btn w-full font-bold cursor-pointer flex items-center justify-center py-3 text-white" id="continue ">Continue</div>
+        </div>
+      </div>
+    </main>
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SSENYONDO MICHEAL</a>.
+  </div>
+</body>
+</html>

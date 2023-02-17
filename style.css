@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf");
+    src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+    src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf");
+  }
+:root{
+    
+    --color-p-red:hsl(0,100%,67%);
+    --color-p-red-bg:hsla(0, 100%, 67%,.5);
+    --color-p-orage:hsl(39,100%,56%);
+    --color-p-orage-bg:hsla(39,100%,56%,.5);
+    --color-p-green:hsl(166,100%,37%);
+    --color-p-green:hsla(166,100%,37%,.5);
+    --color-p-blue:hsl(234,85%,45%);
+    --color-p-blue:hsla(234,85%,45%,.5);
+    --gradient-1: linear-gradient(to top,hsl(241,81%,54%) 20%,hsl(252,100%,67%));
+    --gradient-circle: linear-gradient(to top,hsla(241,72%,40%,1),hsla(256,72%,20%,.8));
+    --color-s-white:hsl(0, 0%, 100%);
+    --color-s-paleblue:hsl(221, 100%, 96%);
+    --color-s-lav:#c8c7ff;
+    --color-s-gray:#303b5a;
+    --border-radius:5px;
+    --box-shadow:10px 15px 15px 5px rgba(200,199,255,0.9);
+}
+.text__lav{
+    color: var(--color-s-lav);
+}
+.text__blue{
+   
+    color: var(--color-s-gray);
+}
+.result-box{
+    background: var(--gradient-1);
+}
+.result-circle{
+
+ color: var(--color-s-white);
+ background: var(--gradient-circle);
+}
+.summarys{
+   outline: 2px soid green;
+}
+.summary1 .summary--name {
+   color: var(--color-p-red);
+}
+.summary{
+    font-size: 1.4rem;
+    border-radius: var(--border-radius);
+}
+.summary2{
+    color: var(--color-p-orage);
+    
+}
+.summary3{
+    color: var(--color-p-green);
+    
+}
+.summary1{
+    color: var(--color-p-blue);
+    
+}
+.btn{
+    background: var(--color-s-gray);
+    border-radius: 50px;
+}
+.container{
+    box-shadow: var(--box-shadow);
+}
